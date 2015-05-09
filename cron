@@ -1,0 +1,7 @@
+# m h  dom mon dow   command
+#Get weather of Paris every 5 minutes
+0,*/5 * * * * ~/.dynbg/meteo.sh 20068150
+#Change the bg every 5 minutes
+4,9,14,19,24,29,34,39,44,49,54,59 * * * * cp ~/.dynbg/02.png ~/.dynbg/01.png
+#Make log of the day and copy it to log folder
+59 23 * * * ~/logs/.logs.sh
